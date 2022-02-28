@@ -13,6 +13,7 @@ const Contact = () => {
   //Regex pour la validation de l'email
   const emailRegex = /\S+@\S+\.\S+/;
   const url = process.env.REACT_APP_URL;
+  console.log(url);
 
   //Validation du formulaire et envois du mail
   const validate = (e) => {
