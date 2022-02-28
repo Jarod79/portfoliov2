@@ -8,8 +8,8 @@ export const menuList = [
   {
     nameFr: "Accueil",
     nameEn: "Home",
-    pathFr: "/accueil",
-    pathEn: "/home",
+    pathFr: "/",
+    pathEn: "/",
     component: <Home />
   },
   {
