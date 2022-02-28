@@ -1,0 +1,30 @@
+.skills {
+  width: 94vw;
+  height: 100vh;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__left {
+    & img {
+      width: 30vw;
+    }
+    & a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.6vw;
+    }
+  }
+  &__language {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 15vw;
+    & p {
+      padding: 0 0.5vw;
+      font-size: 1.4vw;
+      color: white;
+    }
+  }
+}

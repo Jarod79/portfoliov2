@@ -1,0 +1,51 @@
+.menuClose {
+  z-index: -1;
+  animation-name: slideLeftHide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 100px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: darkblue;
+}
+
+.menu {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: darkblue;
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & a {
+      text-decoration: none;
+      margin: 0 2vw;
+      font-size: x-large;
+      color: antiquewhite;
+      transition: 0.3s;
+    }
+    & a:hover {
+      font-size: 3rem;
+      text-decoration: underline;
+      color: antiquewhite;
+    }
+    & .active {
+      text-decoration: underline;
+      color: antiquewhite;
+    }
+  }
+}
