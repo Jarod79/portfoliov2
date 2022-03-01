@@ -3,6 +3,38 @@ import Logo from "../img/LogoJs.png";
 import Cv from "../cv/cv.pdf";
 
 const Skills = () => {
+  const skills = [
+    {
+      text: "JAVASCRIPT"
+    },
+    {
+      text: "HTML5"
+    },
+    {
+      text: "CSS3"
+    },
+    {
+      text: "SQL"
+    },
+    {
+      text: "REACT"
+    },
+    {
+      text: "NODE JS"
+    },
+    {
+      text: "EXPRESS"
+    },
+    {
+      text: "GITHUB"
+    },
+    {
+      text: "TYPESCRIPT"
+    },
+    {
+      text: "METHODE AGILE"
+    }
+  ];
   return (
     <div className="skills">
       <div className="skills__left">
@@ -13,17 +45,11 @@ const Skills = () => {
           </a>
         </h3>
       </div>
+
       <div className="skills__language">
-        <p>JAVASCRIPT</p>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>SQL</p>
-        <p>REACT</p>
-        <p>NODE JS</p>
-        <p>EXPRESS</p>
-        <p>GITHUB</p>
-        <p>TYPESCRIPT</p>
-        <p>METHODE AGILE</p>
+        {skills.map((skill, index) => (
+          <p key={index}>{skill.text}</p>
+        ))}
       </div>
     </div>
   );

@@ -1,4 +1,15 @@
 .portfolio {
-  width: 100vw;
+  width: 96vw;
   height: 100vh;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__carousel {
+    z-index: 0;
+    width: 50vw;
+    & a {
+      width: 20vw;
+    }
+  }
 }
