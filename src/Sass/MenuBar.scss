@@ -8,7 +8,6 @@ $menu: $secondary;
 }
 .menuLeft {
   z-index: 1;
-
   position: absolute;
   width: 100px;
   height: 100vh;
@@ -126,8 +125,18 @@ $menu: $secondary;
       width: 35px;
     }
   }
-
-  @media screen and (max-width: 30em) {
+  @media screen and (max-height: 768px) {
+    &__logo {
+      height: 20vh;
+    }
+    &__burger {
+      height: 50vh;
+    }
+    &__social {
+      margin-bottom: 8vh;
+    }
+  }
+  @media screen and (max-width: 768px) {
     .bigmac {
       background-color: transparent;
 

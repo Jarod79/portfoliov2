@@ -26,4 +26,28 @@
       color: white;
     }
   }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 75vw;
+    &__left {
+      & img {
+        width: 60vw;
+      }
+      & a {
+        font-size: 2.5vw;
+      }
+    }
+    &__language {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: space-around;
+      & p {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  @media screen and (max-height: 768px) {
+    width: 88vw;
+  }
 }

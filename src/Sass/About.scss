@@ -12,4 +12,17 @@
     font-family: "Times New Roman", Times, serif;
     color: white;
   }
+  @media screen and (max-width: 768px) {
+    width: 75vw;
+    margin-left: 100px;
+    & p {
+      font-size: 1.1rem;
+    }
+  }
+  @media screen and (max-height: 768px) {
+    width: 94vw;
+    & p {
+      font-size: 1.2rem;
+    }
+  }
 }

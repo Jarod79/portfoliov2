@@ -47,6 +47,7 @@ const Portfolio = () => {
       >
         {carouselInfos.map((carousel, index) => (
           <a key={index} href={carousel.link} target="blank">
+            <p className="portfolio__link">{carousel.text}</p>
             <img src={carousel.image} alt={carousel.name} />
             <p className="legend" style={{ fontSize: "2vw" }}>
               {carousel.text}
