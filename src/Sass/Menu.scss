@@ -12,6 +12,9 @@
   align-items: center;
   position: absolute;
   background-color: darkblue;
+  &__link {
+    display: none;
+  }
 }
 
 .menu {
@@ -31,9 +34,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 4vw;
     & a {
       text-decoration: none;
-      margin: 0 2vw;
+      margin: 1vh 2vw;
       font-size: x-large;
       color: antiquewhite;
       transition: 0.3s;
