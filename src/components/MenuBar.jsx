@@ -6,6 +6,18 @@ import Logo from "../img/LogoEA.png";
 
 const MenuBar = () => {
   const [menuShow, setMenuShow] = useState(false);
+  const socialNetwork = [
+    {
+      name: "Linkedin",
+      link: "https://www.linkedin.com/in/eric-arrijuria-a64990/",
+      image: linkedin
+    },
+    {
+      name: "GitHub",
+      link: "https://github.com/Jarod79",
+      image: git
+    }
+  ];
   return (
     <div className="container">
       <div className="menuLeft">
@@ -24,22 +36,13 @@ const MenuBar = () => {
             </div>
           </div>
         </div>
-        <div className="menuLeft__social">
-          <a
-            href="https://www.linkedin.com/in/eric-arrijuria-a64990/"
-            target="blank"
-            className="menu_link_social"
-          >
-            <img src={linkedin} alt="Linkedin" className="linkedin" />
-          </a>
-          <a
-            href="https://github.com/Jarod79"
-            target="blank"
-            className="menu_link_social"
-          >
-            <img src={git} alt="GitHub" className="git" />
-          </a>
-        </div>
+        {socialNetwork.map((social, index) => (
+          <div className="menuLeft__social" key={index}>
+            <a href={social.link} target="blank" className="menu_link_social">
+              <img src={social.image} alt={social.name} className="linkedin" />
+            </a>
+          </div>
+        ))}
         <Menu show={menuShow} setMenuShow={setMenuShow} />
       </div>
     </div>

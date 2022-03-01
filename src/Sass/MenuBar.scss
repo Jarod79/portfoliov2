@@ -118,9 +118,9 @@ $menu: $secondary;
     display: flex;
     flex-direction: column;
     width: 100px;
-    height: 1vh;
+    height: 4vh;
+    margin-top: 2vh;
     & img {
-      margin-bottom: 2vh;
       border-radius: 50%;
       background-color: white;
       width: 35px;
