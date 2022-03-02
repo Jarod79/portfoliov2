@@ -19,32 +19,34 @@ const MenuBar = () => {
     }
   ];
   return (
-    <div className="container">
-      <div className="menuLeft">
-        <div className="menuLeft__logo">
-          <img src={Logo} alt="logo" />
-        </div>
-        <div
-          className="menuLeft__burger"
-          onClick={() => setMenuShow(!menuShow)}
-        >
-          <div className="wrapper">
-            <div className="bun">
-              <div className="bigmac">
-                <span className="meat">{menuShow ? "CLOSE" : "MENU"}</span>
-              </div>
+    <div className="menuLeft">
+      <div className="menuLeft__logo">
+        <img src={Logo} alt="logo" />
+      </div>
+      <div className="menuLeft__burger">
+        <div className="wrapper" onClick={() => setMenuShow(!menuShow)}>
+          <div className="bun">
+            <div className="bigmac">
+              <span className="meat">{menuShow ? "CLOSE" : "MENU"}</span>
             </div>
           </div>
         </div>
-        {socialNetwork.map((social, index) => (
-          <div className="menuLeft__social" key={index}>
-            <a href={social.link} target="blank" className="menu_link_social">
-              <img src={social.image} alt={social.name} className="linkedin" />
-            </a>
-          </div>
-        ))}
-        <Menu show={menuShow} setMenuShow={setMenuShow} />
       </div>
+
+      <div className="menuLeft__social">
+        {socialNetwork.map((social, index) => (
+          <a
+            key={index}
+            href={social.link}
+            target="blank"
+            className="menu_link_social"
+          >
+            <img src={social.image} alt={social.name} className="linkedin" />
+          </a>
+        ))}
+      </div>
+
+      <Menu show={menuShow} setMenuShow={setMenuShow} />
     </div>
   );
 };

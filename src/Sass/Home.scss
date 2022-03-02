@@ -1,5 +1,4 @@
 .home {
-  width: 96vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,11 +11,8 @@
     width: 60vw;
   }
   @media screen and (max-width: 768px) {
-    width: 75vw;
-    & img {
-      width: 60vw;
-      height: 50vh;
-    }
+    width: 100vw;
+    margin: 0;
   }
   @media screen and (max-height: 768px) {
     width: 87vw;

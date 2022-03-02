@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 96vw;
+  width: 94vw;
   height: 100vh;
   margin-left: 100px;
   &__myForm {
@@ -58,20 +58,23 @@
     width: 40vw;
   }
   @media screen and (max-width: 768px) {
-    width: 75vw;
+    z-index: 1;
+    width: 100vw;
+    margin: 0;
     &__myForm {
-      width: 50vw;
+      width: 80vw;
     }
     &__submit {
-      width: 35vw;
+      width: 75vw;
       margin: auto;
+      margin-top: 5vh;
     }
     &__alert {
-      font-size: 3vw;
+      font-size: 6vw;
       margin: auto;
     }
     &__confirmation {
-      font-size: 3vw;
+      font-size: 6vw;
       margin: auto;
     }
   }

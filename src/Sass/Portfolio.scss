@@ -1,5 +1,5 @@
 .portfolio {
-  width: 96vw;
+  width: 94vw;
   height: 100vh;
   margin-left: 100px;
   display: flex;
@@ -15,9 +15,10 @@
     display: none;
   }
   @media screen and (max-width: 768px) {
-    width: 75vw;
+    width: 100vw;
+    margin: 0;
     &__carousel {
-      width: 60vw;
+      width: 80vw;
       & a {
         color: white;
       }
@@ -33,7 +34,7 @@
     }
     &__link {
       display: block;
-      width: 60vw;
+      width: 80vw;
       height: 10vh;
       padding: 1vh 0;
     }
