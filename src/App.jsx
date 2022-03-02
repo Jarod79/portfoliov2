@@ -3,12 +3,12 @@ import MenuBar from "./components/MenuBar";
 import BackgroundBubble from "./components/BackgroundBubble";
 import "./Sass/AllSass.scss";
 import { menuList } from "./Menu";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/portfoliov2">
+      <HashRouter>
         <MenuBar />
         <BackgroundBubble />
         <Routes>
@@ -16,7 +16,7 @@ function App() {
             <Route path={pathFr} key={index} element={component} />
           ))}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

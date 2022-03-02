@@ -46,8 +46,8 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <div className="contact_content">
-        <form className="myForm" method="POST">
+      <div className="contact__content">
+        <form className="contact__myForm" method="POST">
           <label htmlFor="firstname">Prénom</label>
           <input
             type="text"
@@ -85,11 +85,13 @@ const Contact = () => {
             placeholder="Écrivez votre message..."
           ></textarea>
 
-          <button id="submit" type="Submit" onClick={validate}>
+          <button className="contact__submit" type="Submit" onClick={validate}>
             Envoyer
           </button>
-          {empty && <div className={"alert"}>{empty}</div>}
-          {confirmation && <div className={"confirmation"}>{confirmation}</div>}
+          {empty && <div className={"contact__alert"}>{empty}</div>}
+          {confirmation && (
+            <div className={"contact__confirmation"}>{confirmation}</div>
+          )}
         </form>
       </div>
     </div>

@@ -3,16 +3,14 @@ $primary: #f5f8de;
 $secondary: #9e2b25;
 
 $menu: $secondary;
-.container {
-  background-color: white;
-}
-.menuLeft {
-  z-index: 1;
 
-  position: absolute;
+.menuLeft {
+  background-color: rgba(0, 0, 0, 0.096);
+  z-index: 1;
+  position: fixed;
   width: 100px;
   height: 100vh;
-  border-right: black solid 1px;
+  border-right: rgb(61, 0, 0) solid 1px;
   //Logo to up left bar
   &__logo {
     padding-top: 2vh;
@@ -117,6 +115,7 @@ $menu: $secondary;
   &__social {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100px;
     height: 4vh;
     margin-top: 2vh;
@@ -126,8 +125,46 @@ $menu: $secondary;
       width: 35px;
     }
   }
-
-  @media screen and (max-width: 30em) {
+  @media screen and (max-height: 700px) {
+    &__logo {
+      height: 20vh;
+    }
+    &__burger {
+      height: 50vh;
+    }
+    &__social {
+      margin-bottom: 8vh;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    border-bottom: rgb(61, 0, 0) solid 1px;
+    height: 90px;
+    width: 100vw;
+    &__burger {
+      height: 80px;
+      width: 60vw;
+    }
+    //Logo to up left bar
+    &__logo {
+      padding-top: 2vh;
+      height: 13vh;
+      width: 20vw;
+      & img {
+        width: 50px;
+      }
+    }
+    //Style to social icons left bar
+    &__social {
+      flex-direction: column;
+      width: 10vw;
+      margin-left: 4vw;
+      & img {
+        border-radius: 50%;
+        background-color: white;
+        width: 25px;
+      }
+    }
     .bigmac {
       background-color: transparent;
 

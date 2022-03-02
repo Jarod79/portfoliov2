@@ -1,5 +1,6 @@
 .skills {
-  width: 96vw;
+  position: absolute;
+  width: 94vw;
   height: 100vh;
   margin-left: 100px;
   display: flex;
@@ -25,5 +26,31 @@
       font-size: 1.4vw;
       color: white;
     }
+  }
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    &__left {
+      margin-top: 5vh;
+      & img {
+        width: 60vw;
+      }
+      & a {
+        font-size: 3.5vw;
+      }
+    }
+    &__language {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: space-around;
+      & p {
+        font-size: 3.2vw;
+      }
+    }
+  }
+  @media screen and (max-height: 700px) {
+    width: 88vw;
   }
 }
