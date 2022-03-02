@@ -58,7 +58,6 @@
     width: 40vw;
   }
   @media screen and (max-width: 768px) {
-    z-index: 1;
     width: 100vw;
     margin: 0;
     &__myForm {
@@ -71,10 +70,12 @@
     }
     &__alert {
       font-size: 6vw;
+      width: 60vw;
       margin: auto;
     }
     &__confirmation {
       font-size: 6vw;
+      width: 60vw;
       margin: auto;
     }
   }

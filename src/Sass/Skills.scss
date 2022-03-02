@@ -1,4 +1,5 @@
 .skills {
+  position: absolute;
   width: 94vw;
   height: 100vh;
   margin-left: 100px;
@@ -31,11 +32,12 @@
     width: 100vw;
     margin: 0;
     &__left {
+      margin-top: 5vh;
       & img {
         width: 60vw;
       }
       & a {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
       }
     }
     &__language {
@@ -44,7 +46,7 @@
       align-items: center;
       justify-content: space-around;
       & p {
-        font-size: 2.5vw;
+        font-size: 3.2vw;
       }
     }
   }

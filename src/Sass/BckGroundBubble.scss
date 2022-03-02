@@ -10,7 +10,10 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 @function sample($list) {
   @return nth($list, random(length($list)));
 }
-
+.background {
+  position: relative;
+  z-index: -1;
+}
 .bubbles {
   position: absolute;
   width: 100vw;
